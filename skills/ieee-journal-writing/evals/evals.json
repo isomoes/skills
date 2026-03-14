@@ -1,0 +1,40 @@
+{
+  "skill_name": "ieee-journal-writing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Rewrite this abstract in IEEE journal style without changing the technical meaning:\n\nWe propose a very innovative and powerful fault diagnosis framework for industrial motors. The main idea is that a multiscale convolutional model is used to process vibration signals, and the obtained features are then fused with temperature statistics in order to get better results. A lot of experiments were conducted on two datasets, and the proposed method achieved excellent performance and showed that it can be used in many real scenarios. The method is also efficient and robust, which demonstrates its superiority over previous methods.",
+      "expected_output": "A tighter abstract-style paragraph with neutral, evidence-based phrasing, less hype, and preserved technical meaning.",
+      "files": [],
+      "expectations": [
+        "The rewrite removes promotional wording such as 'very innovative', 'powerful', or 'superiority'.",
+        "The rewrite preserves the core method details: multiscale convolutional processing of vibration signals and fusion with temperature statistics.",
+        "The rewrite uses concise, formal academic language suitable for an IEEE-style paper.",
+        "The rewrite presents the abstract in at least two sentences rather than one overloaded sentence."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Please revise this LaTeX introduction paragraph for an IEEE journal submission. Keep all citations and commands intact:\n\nRecent years have witnessed a rapid growth of unmanned aerial vehicle applications in smart agriculture. However, it is still challenging to obtain reliable crop stress estimation under varying illumination and occlusion conditions. In this paper, we develop a feature fusion pipeline that combines spectral descriptors with texture cues to improve robustness. The framework is very effective and has strong generalization ability according to the experimental results in Section~\\ref{sec:results}. Similar ideas have also been explored in remote sensing literature~\\cite{smith2022fusion,lee2023uav}.",
+      "expected_output": "A revised LaTeX paragraph that keeps `\\ref{sec:results}` and the citation command untouched while improving tone and concision.",
+      "files": [],
+      "expectations": [
+        "The rewrite preserves `\\ref{sec:results}` exactly.",
+        "The rewrite preserves `\\cite{smith2022fusion,lee2023uav}` exactly.",
+        "The rewrite softens or replaces vague claims such as 'very effective' and 'strong generalization ability'.",
+        "The rewrite avoids first-person plural wording such as `we` unless the source requires it."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need help polishing a methodology paragraph for a power electronics paper. Keep it objective and replication-friendly:\n\nFirst, the collected switching waveforms are normalized and segmented. After that, a temporal encoder is applied for extracting latent representations, and then a lightweight attention block is adopted to focus on informative regions. Finally, the classifier outputs the fault category. In order to make the proposed method more stable, we also use a hybrid loss. The overall training process is simple and effective, and the network can be trained efficiently on a standard GPU.",
+      "expected_output": "A more precise methods paragraph with better flow, less filler, and a replication-oriented tone.",
+      "files": [],
+      "expectations": [
+        "The rewrite maintains the procedural sequence of normalization, segmentation, encoding, attention, and classification.",
+        "The rewrite removes vague phrasing such as 'simple and effective'.",
+        "The rewrite retains methodological detail instead of collapsing the paragraph into a high-level summary."
+      ]
+    }
+  ]
+}
